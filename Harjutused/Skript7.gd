@@ -42,7 +42,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("lae"):
 		lae()
-	if Input.is_action_just_pressed("tulista"):
+	if Input.is_action_just_pressed("tulista") and kuulid > 0:
 		tulista()
 	skoor = [tapsus,lasud]
 	if elud < 1:
