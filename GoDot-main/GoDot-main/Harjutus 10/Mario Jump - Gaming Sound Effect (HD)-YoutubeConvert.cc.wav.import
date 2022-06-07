@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Mario Jump - Gaming Sound Effect (HD)-YoutubeConvert.cc.wav-07b1e4f9264989b05682093010186d7d.sample"
+
+[deps]
+
+source_file="res://Mario Jump - Gaming Sound Effect (HD)-YoutubeConvert.cc.wav"
+dest_files=[ "res://.import/Mario Jump - Gaming Sound Effect (HD)-YoutubeConvert.cc.wav-07b1e4f9264989b05682093010186d7d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

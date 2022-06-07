@@ -1,0 +1,78 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Adventurer-1.5/VT323-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_size = 4
+outline_color = Color( 0.909804, 0.14902, 0.0509804, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1022.0
+margin_bottom = 598.0
+color = Color( 0.258824, 0.545098, 0.180392, 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+margin_left = 57.0
+margin_top = 43.0
+margin_right = 962.0
+margin_bottom = 549.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+margin_right = 905.0
+margin_bottom = 506.0
+size_flags_horizontal = 13
+custom_constants/separation = 40
+alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 138.0
+margin_right = 905.0
+margin_bottom = 188.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "MÄNG"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+margin_left = 427.0
+margin_top = 228.0
+margin_right = 477.0
+margin_bottom = 248.0
+size_flags_horizontal = 4
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0352941, 0.941176, 0.964706, 1 )
+text = "Mängi"
+flat = true
+
+[node name="Button2" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+margin_left = 423.0
+margin_top = 288.0
+margin_right = 481.0
+margin_bottom = 308.0
+size_flags_horizontal = 4
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0666667, 0.937255, 0.956863, 1 )
+text = "Seaded"
+flat = true
+
+[node name="Button3" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+margin_left = 431.0
+margin_top = 348.0
+margin_right = 474.0
+margin_bottom = 368.0
+size_flags_horizontal = 4
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0509804, 0.937255, 0.894118, 1 )
+text = "Välju"
+flat = true
+
+[connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/Button3" to="." method="_on_Button3_pressed"]
